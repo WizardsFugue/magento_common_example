@@ -1,0 +1,745 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "43fb0478ac1d596bff72b7dd3b5c609b",
+    "packages": [
+        {
+            "name": "fbrnc/Aoe_Profiler",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/fbrnc/Aoe_Profiler.git",
+                "reference": "v0.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fbrnc/Aoe_Profiler/zipball/v0.3.0",
+                "reference": "v0.3.0",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "mail@{firstname}-{lastname}.de"
+                }
+            ],
+            "description": "Magento Profiler",
+            "homepage": "http://www.fabrizio-branca.de/magento-profiler.html",
+            "support": {
+                "source": "https://github.com/fbrnc/Aoe_Profiler/tree/v0.3.0",
+                "issues": "https://github.com/fbrnc/Aoe_Profiler/issues"
+            },
+            "time": "2013-10-27 00:28:01"
+        },
+        {
+            "name": "fbrnc/Aoe_TemplateHints",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/fbrnc/Aoe_TemplateHints.git",
+                "reference": "v0.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fbrnc/Aoe_TemplateHints/zipball/v0.4.0",
+                "reference": "v0.4.0",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "mail@{firstname}-{lastname}.de"
+                }
+            ],
+            "description": "Advanced Template Hints for Magento",
+            "homepage": "http://www.fabrizio-branca.de/magento-advanced-template-hints-20.html",
+            "support": {
+                "source": "https://github.com/fbrnc/Aoe_TemplateHints/tree/v0.4.0",
+                "issues": "https://github.com/fbrnc/Aoe_TemplateHints/issues"
+            },
+            "time": "2013-05-04 05:14:34"
+        },
+        {
+            "name": "firegento/magesetup",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/firegento/firegento-magesetup.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/firegento/firegento-magesetup/zipball/2.1.1",
+                "reference": "2.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "require-dev": {
+                "ecomdev/mage-ci": "master-dev"
+            },
+            "type": "magento-module",
+            "extra": {
+                "magento-root-dir": "test/",
+                "magento_connect": {
+                    "name": "FireGento_MageSetup",
+                    "summary": "MageSetup configures a shop for a national market. It creates configuration and tax settings, email templates, cms blocks and pages.",
+                    "channel": "community",
+                    "php_min": "5.3.0",
+                    "php_max": "7.9.9",
+                    "stability": "stable",
+                    "license_uri": "http://www.gnu.org/licenses/gpl-3.0.html",
+                    "content": [
+                        {
+                            "type": "magecommunity",
+                            "structure": "dir",
+                            "path": "FireGento/MageSetup"
+                        },
+                        {
+                            "type": "mageetc",
+                            "structure": "file",
+                            "path": "modules/FireGento_MageSetup.xml"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "de_AT/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "de_CH/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "de_DE/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "de_DE/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "en_US/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "en_US/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "ru_RU/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "ru_RU/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "fr_CH/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "fr_FR/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "fr_FR/template/magesetup"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "file",
+                            "path": "it_IT/FireGento_MageSetup.csv"
+                        },
+                        {
+                            "type": "magelocale",
+                            "structure": "dir",
+                            "path": "it_IT/template/magesetup"
+                        },
+                        {
+                            "type": "magedesign",
+                            "structure": "file",
+                            "path": "adminhtml/default/default/layout/magesetup.xml"
+                        },
+                        {
+                            "type": "magedesign",
+                            "structure": "dir",
+                            "path": "adminhtml/default/default/template/magesetup"
+                        },
+                        {
+                            "type": "magedesign",
+                            "structure": "file",
+                            "path": "frontend/base/default/layout/magesetup.xml"
+                        },
+                        {
+                            "type": "magedesign",
+                            "structure": "dir",
+                            "path": "frontend/base/default/template/magesetup"
+                        },
+                        {
+                            "type": "mageskin",
+                            "structure": "dir",
+                            "path": "frontend/base/default/css/magesetup"
+                        }
+                    ]
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Team FireGento",
+                    "email": "team@firegento.com"
+                }
+            ],
+            "description": "<p>Central features of MageSetup are:</p><ul><li>Setting of important configuration settings</li><li>Predefined tax settings and tax classes for shipping from several countries to worldwide destinations</li><li>Assign new tax classes to all products (configurable)</li><li>Creation of email templates based on the local language pack. Legal texts can be added to some templates automatically.</li><li>Creation and Activation of Checkout Agreements. Agreements can be shown at customer registration instead of or additional to the checkout. They can be required or not.</li><li>Creation of default CMS pages like imprint, terms and conditions, privacy, shipping, payment methods.</li><li>Create email templates, cms pages and blocks as well as checkout agreements for store views with a different language as well</li><li>Possibility to add tax and/or shipping info to all prices</li><li>Automatical generation of meta data to products</li><li>Saving of every status change of newsletter subscriptions</li><li>Presets are configurable via xml files for every country seperately</li><li>Many more, see the <a href=\"https://github.com/firegento/firegento-magesetup/blob/development/docs/features/features.markdown\">full list of features</a> including several screenshots.</li></ul>",
+            "homepage": "https://github.com/firegento/firegento-magesetup",
+            "support": {
+                "source": "https://github.com/firegento/firegento-magesetup/tree/2.1.1",
+                "issues": "https://github.com/firegento/firegento-magesetup/issues"
+            },
+            "time": "2014-01-06 15:21:37"
+        },
+        {
+            "name": "firegento/psr0autoloader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/magento-hackathon/Magento-PSR-0-Autoloader.git",
+                "reference": "61be255f53576e89ead292303843cf57c14da16b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/magento-hackathon/Magento-PSR-0-Autoloader/zipball/61be255f53576e89ead292303843cf57c14da16b",
+                "reference": "61be255f53576e89ead292303843cf57c14da16b",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "require-dev": {
+                "ecomdev/mage-ci": "master-dev"
+            },
+            "type": "magento-module",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Ryvlin"
+                },
+                {
+                    "name": "Damian Luszczymak"
+                }
+            ],
+            "description": "This extension adds a PSR-0 autoloader before the Varien autoloader",
+            "support": {
+                "source": "https://github.com/magento-hackathon/Magento-PSR-0-Autoloader/tree/master",
+                "issues": "https://github.com/magento-hackathon/Magento-PSR-0-Autoloader/issues"
+            },
+            "time": "2013-12-23 09:03:26"
+        },
+        {
+            "name": "magento-hackathon/magento-composer-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/magento-hackathon/magento-composer-installer.git",
+                "reference": "2.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/magento-hackathon/magento-composer-installer/zipball/2.0.0-beta1",
+                "reference": "2.0.0-beta1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "mikey179/vfsstream": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "magento-hackathon/composer-command-integrator": "*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "composer-command-registry": [
+                    "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
+                ],
+                "class": "MagentoHackathon\\Composer\\Magento\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Magento": "src/"
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "flyingmana@googlemail.com"
+                },
+                {
+                    "name": "Jörg Weller",
+                    "email": "weller@flagbit.de"
+                },
+                {
+                    "name": "Karl Spies",
+                    "email": "karl.spies@gmx.net"
+                },
+                {
+                    "name": "Tobias Vogt",
+                    "email": "tobi@webguys.de"
+                },
+                {
+                    "name": "David Fuhr",
+                    "email": "fuhr@flagbit.de"
+                },
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com"
+                }
+            ],
+            "description": "Composer installer for Magento modules",
+            "homepage": "https://github.com/magento-hackathon/magento-composer-installer",
+            "keywords": [
+                "composer-installer",
+                "magento"
+            ],
+            "support": {
+                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/master",
+                "issues": "https://github.com/magento-hackathon/magento-composer-installer/issues"
+            },
+            "time": "2014-02-26 13:13:09"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "composer/composer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/composer.git",
+                "reference": "321bd3e1f79d362f0ea23da83d9821abf373c7cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/composer/zipball/321bd3e1f79d362f0ea23da83d9821abf373c7cb",
+                "reference": "321bd3e1f79d362f0ea23da83d9821abf373c7cb",
+                "shasum": ""
+            },
+            "require": {
+                "justinrainbow/json-schema": "~1.1",
+                "php": ">=5.3.2",
+                "seld/jsonlint": "1.*",
+                "symfony/console": "~2.3",
+                "symfony/finder": "~2.2",
+                "symfony/process": "~2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.10"
+            },
+            "suggest": {
+                "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+            },
+            "bin": [
+                "bin/composer"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                }
+            ],
+            "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
+            "homepage": "http://getcomposer.org/",
+            "keywords": [
+                "autoload",
+                "dependency",
+                "package"
+            ],
+            "time": "2014-03-30 17:55:37"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "1.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "d97cf3ce890fe80f247fc08594a1c8a1029fc7ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d97cf3ce890fe80f247fc08594a1c8a1029fc7ed",
+                "reference": "d97cf3ce890fe80f247fc08594a1c8a1029fc7ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "json-schema/json-schema-test-suite": "1.1.0",
+                "phpdocumentor/phpdocumentor": "~2",
+                "phpunit/phpunit": "~3.7"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JsonSchema": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                },
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com",
+                    "homepage": "http://digitalkaoz.net"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2014-03-05 15:03:52"
+        },
+        {
+            "name": "magento-hackathon/composer-command-integrator",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/magento-hackathon/composer-command-integrator.git",
+                "reference": "1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/magento-hackathon/composer-command-integrator/zipball/1.0",
+                "reference": "1.0",
+                "shasum": ""
+            },
+            "require": {
+                "composer/composer": "*"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "phpunit/phpunit": "*"
+            },
+            "bin": [
+                "bin/composerCommandIntegrator.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Command": "src/"
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "daniel@digitalmanufaktur.com"
+                }
+            ],
+            "description": "module to create binaries and scripts which get executed in context of composer so they are able to access content from the composer.json ",
+            "support": {
+                "source": "https://github.com/magento-hackathon/composer-command-integrator/tree/1.0",
+                "issues": "https://github.com/magento-hackathon/composer-command-integrator/issues"
+            },
+            "time": "2013-07-31 03:10:25"
+        },
+        {
+            "name": "seld/jsonlint",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/jsonlint.git",
+                "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
+                "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "bin/jsonlint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Seld\\JsonLint": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Linter",
+            "keywords": [
+                "json",
+                "linter",
+                "parser",
+                "validator"
+            ],
+            "time": "2013-11-04 15:41:11"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.4.2",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "suggest": {
+                "symfony/event-dispatcher": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-02-11 13:52:09"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v2.4.2",
+            "target-dir": "Symfony/Component/Finder",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Finder.git",
+                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Finder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-01-07 13:28:54"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v2.4.2",
+            "target-dir": "Symfony/Component/Process",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "c175448bac997556f8ab972908a4e14c7291fb03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/c175448bac997556f8ab972908a4e14c7291fb03",
+                "reference": "c175448bac997556f8ab972908a4e14c7291fb03",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-02-11 13:52:09"
+        }
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "magento-hackathon/magento-composer-installer": 20,
+        "firegento/psr0autoloader": 20,
+        "composer/composer": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

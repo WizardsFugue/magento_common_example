@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MagentoCommon" basedir="." default="main" >
+
+    <target name="main"  depends="magento-base,magento-modules">
+        
+    </target>
+    
+    <target name="clean">
+        <!--<delete dir="build"/>-->
+    </target>
+
+    <target name="magento-base">
+        <delete dir="magento-base/vendor"/>
+        <exec executable="composer.phar">
+            <arg value="install"/>
+            <arg value="--working-dir=magento-base"/>
+            <arg value="--no-interaction"/>
+            <arg value="--profile"/>
+            <arg value="--optimize-autoloader"/>
+        </exec>
+    </target>
+
+    <target name="magento-modules">
+        <delete dir="magento-modules/vendor"/>
+        <exec executable="composer.phar">
+            <arg value="install"/>
+            <arg value="--working-dir=magento-modules"/>
+            <arg value="--no-interaction"/>
+            <arg value="--profile"/>
+            <arg value="--optimize-autoloader"/>
+        </exec>
+    </target>
+
+</project>
