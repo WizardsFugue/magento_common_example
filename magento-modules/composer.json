@@ -10,6 +10,7 @@
         "magento-hackathon/composer-command-integrator": "*",
         "phpunit/phpunit": "4.*",
         "phpunit/dbunit":"*",
+        "phpunit/php-invoker": "*",
         "WizardsFugue/magento1_tests": "dev-master",
         "composer/composer": "dev-master"
     },
@@ -23,6 +24,12 @@
             "url": "http://packages.firegento.com"
         }
     ],
+    "autoload":{
+        "classmap": [
+            "../public/app/code",
+            "../public/lib"
+        ]
+    },
     "extra":{
         "magento-deploystrategy": "symlink",
         "auto-append-gitignore": true,
