@@ -2,12 +2,14 @@
     "require": {
         "fbrnc/aoe_templatehints": "*",
         "fbrnc/aoe_profiler": "*",
-        "magento-hackathon/magento-composer-installer": "dev-master",
+        "magento-hackathon/magento-composer-installer": "*@dev",
         "firegento/psr0autoloader": "dev-master",
         "firegento/magesetup": "*"
     },
     "require-dev": {
         "magento-hackathon/composer-command-integrator": "*",
+        "phpunit/phpunit": "4.*",
+        "phpunit/dbunit":"*",
         "composer/composer": "dev-master"
     },
     "repositories": [
