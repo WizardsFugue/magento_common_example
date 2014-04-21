@@ -10,9 +10,14 @@
         "magento-hackathon/composer-command-integrator": "*",
         "phpunit/phpunit": "4.*",
         "phpunit/dbunit":"*",
+        "WizardsFugue/magento1_tests": "dev-master",
         "composer/composer": "dev-master"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/WizardsFugue/magento1_tests"
+        },
         {
             "type": "composer",
             "url": "http://packages.firegento.com"

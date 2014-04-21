@@ -79,9 +79,29 @@
 
     </target>
     
-    <target name="test" >
+    <target name="phpunit" >
         <exec executable="magento-modules/vendor/bin/phpunit">
         </exec>
+    </target>
+    
+    <target name="setup-test-database">
+        <exec executable="mysql">
+            <arg value="-e"/>
+            <arg value="create database magento_test;"/>
+        </exec>
+        <exec executable="bunzip2">
+            <arg value="./magento-modules/vendor/WizardsFugue/magento1_tests/scripts/travis/magento_test.sql.bz2"/>
+        </exec>
+        <exec 
+                executable="mysql"
+                input="./magento-modules/vendor/WizardsFugue/magento1_tests/scripts/travis/magento_test.sql"
+                >
+            <arg value="--database=magento_test"/>
+        </exec>
+        <copy 
+                file="magento-modules/vendor/WizardsFugue/magento1_tests/scripts/vagrant/local.xml" 
+                tofile="public/app/etc/local.xml"
+                />
     </target>
 
 </project>
