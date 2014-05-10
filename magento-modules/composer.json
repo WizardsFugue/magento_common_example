@@ -2,7 +2,10 @@
     "require": {
         "fbrnc/aoe_templatehints": "*",
         "fbrnc/aoe_profiler": "*",
-        "magento-hackathon/magento-composer-installer": "*@dev",
+        "magento-hackathon/magento-composer-installer": "~2.0@dev",
+        "theseer/autoload": "~1.14",
+        "zetacomponents/console-tools": "dev-master",
+        "lisachenko/go-aop-php": "0.4.3",
         "firegento/psr0autoloader": "dev-master",
         "firegento/magesetup": "*"
     },
@@ -33,6 +36,17 @@
     "extra":{
         "magento-deploystrategy": "symlink",
         "auto-append-gitignore": true,
+        "magento-deploy-ignore": {
+            "fbrnc/aoe_profiler": [
+                "/"
+            ]
+        },
+        "magento-project": {
+            "libraryPath": "../public/composer_lib/",
+            "libraries": {
+                "magento-hackathon/magento-composer-installer-test-library": {}
+            }
+        },
         "magento-root-dir": "../public/"
     }
 }

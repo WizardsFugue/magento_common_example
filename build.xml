@@ -9,6 +9,11 @@
         <delete dir="magento-base/vendor"/>
         <delete dir="magento-modules/vendor"/>
     </target>
+    
+    <target name="clean-composer-lock">
+        <delete dir="magento-base/composer.lock"/>
+        <delete dir="magento-modules/composer.lock"/>
+    </target>
 
     <target name="magento-base">
         <exec executable="composer.phar">

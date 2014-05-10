@@ -1,6 +1,6 @@
 {
     "require": {
-        "magento-hackathon/magento-composer-installer": "*@dev",
+        "magento-hackathon/magento-composer-installer": "~2.0@dev",
         "connect20/mage_all_latest": "*"
     },
     "repositories": [
@@ -12,6 +12,12 @@
     "extra":{
         "magento-deploystrategy": "copy",
         "magento-force": "override",
+        "magento-deploy-ignore": {
+            "*": [
+                "/index.php",
+                "/app/code/core/Mage/Payment/Model/Paygate/Request.php"
+            ]
+        },
         "auto-append-gitignore": true,
         "magento-root-dir": "../public/"
     }

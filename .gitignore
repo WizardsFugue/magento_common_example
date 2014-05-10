@@ -1,6 +1,7 @@
 /magento-modules/vendor
 /magento-base/vendor
 
-/public
+/public/*
 /public/.gitignore
+!/public/index.php
 
