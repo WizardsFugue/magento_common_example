@@ -71,7 +71,7 @@
     </target>
 
 
-    <target name="dev"  depends="magento-base-dev,magento-modules-dev">
+    <target name="dev"  depends="magento-base,magento-modules-dev">
 
     </target>
     
