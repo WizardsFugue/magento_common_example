@@ -8,11 +8,15 @@
     <target name="clean">
         <delete dir="magento-base/vendor"/>
         <delete dir="magento-modules/vendor"/>
+        <delete dir="public/app/code"/>
+        <delete dir="public/app/design"/>
+        <delete dir="public/app/locale"/>
+        <delete dir="public/skin"/>
     </target>
     
     <target name="clean-composer-lock">
-        <delete dir="magento-base/composer.lock"/>
-        <delete dir="magento-modules/composer.lock"/>
+        <delete file="magento-base/composer.lock"/>
+        <delete file="magento-modules/composer.lock"/>
     </target>
 
     <target name="magento-base">
