@@ -1,11 +1,12 @@
 {
     "require": {
         "fbrnc/aoe_templatehints": "*",
-        "fbrnc/aoe_profiler": "*",
+        "magento-hackathon/async-index": "dev-master",
         "magento-hackathon/magento-composer-installer": "~2.0@dev",
         "theseer/autoload": "~1.14",
         "zetacomponents/console-tools": "dev-master",
         "lisachenko/go-aop-php": "0.4.3",
+        "fbrnc/aoe_scheduler": "*",
         "firegento/psr0autoloader": "dev-master",
         "firegento/magesetup": "*"
     },
@@ -23,6 +24,14 @@
             "url": "https://github.com/WizardsFugue/magento1_tests"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/AsyncIndex.git"
+        },
+        {
             "type": "composer",
             "url": "http://packages.firegento.com"
         }
@@ -35,11 +44,15 @@
     },
     "extra":{
         "magento-deploystrategy": "symlink",
+        "magento-force": true,
         "auto-append-gitignore": true,
         "magento-deploy-ignore": {
             "fbrnc/aoe_profiler": [
                 "/"
             ]
+        },
+        "magento-deploystrategy-overwrite": {
+            "fbrnc/aoe_scheduler": "copy"
         },
         "magento-project": {
             "libraryPath": "../public/composer_lib/",
