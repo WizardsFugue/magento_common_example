@@ -1,2 +1,3 @@
 magento/app/etc/local.xml    app/etc/local.xml
 magento/app/etc/config_project.xml    app/etc/config_project.xml
+magento/app/design/frontend/default/default/layout/local.xml   app/design/frontend/default/default/layout/local.xml

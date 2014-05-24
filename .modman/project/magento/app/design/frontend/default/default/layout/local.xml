@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+    <default>
+        <remove name="right.poll"/>
+        <remove name="tags_popular"/>
+        <remove name="left.permanent.callout"/>
+        <remove name="right.permanent.callout"/>
+        <remove name="product_tag_list"/>
+    </default>
+    
+</layout>
