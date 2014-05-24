@@ -1,0 +1,27 @@
+{
+    "require": {
+        "sitewards/modman-php": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer.git"
+        },
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+    "extra":{
+        "magento-deploystrategy": "copy",
+        "magento-force": "override",
+        "magento-deploy-ignore": {
+            "*": [
+                "/index.php",
+                "/app/code/core/Mage/Payment/Model/Paygate/Request.php"
+            ]
+        },
+        "auto-append-gitignore": true,
+        "magento-root-dir": "../public/"
+    }
+}

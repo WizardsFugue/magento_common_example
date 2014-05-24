@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "3256dc4484fe8dae43b3f906a66e6c6e",
+    "packages": [
+        {
+            "name": "sitewards/modman-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitewards/modman-php.git",
+                "reference": "293c271ac64bee1616b3eeae58597efaf938fa2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitewards/modman-php/zipball/293c271ac64bee1616b3eeae58597efaf938fa2d",
+                "reference": "293c271ac64bee1616b3eeae58597efaf938fa2d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "modman.php",
+                "modman.sh",
+                "modman.bat"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP implementation for modman, to use it on every operating system with PHP support (also Windows).",
+            "homepage": "https://github.com/sitewards/modman-php",
+            "time": "2014-05-22 14:09:37"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "sitewards/modman-php": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
