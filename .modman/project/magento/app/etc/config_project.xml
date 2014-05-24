@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <!-- does this even work? -->
+    <stores>
+        <default>
+            <dev>
+                <template>
+                    <allow_symlink>1</allow_symlink>
+                </template>
+            </dev>
+        </default>
+    </stores>
+
+</config>
