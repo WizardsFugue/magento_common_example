@@ -2,6 +2,10 @@
 <project name="MagentoCommon" basedir="." default="main" >
 
     <target name="main"  depends="magento-base,magento-modules">
+        <exec executable="vendor/bin/modman.sh">
+            <arg value="deploy"/>
+            <arg value="project"/>
+        </exec>
         
     </target>
     
