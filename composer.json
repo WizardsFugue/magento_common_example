@@ -1,6 +1,11 @@
 {
     "require": {
-        "sitewards/modman-php": "dev-master"
+        "sitewards/modman-php": "dev-master",
+        "silex/silex": "~1.1",
+        "twig/twig": "~1.8",
+        "p2ee/preparables": "dev-master",
+        "p2ee/baserequirements": "dev-master",
+        "p2ee/partlets": "dev-master"
     },
     "repositories": [
         {
@@ -12,6 +17,10 @@
             "url": "http://packages.firegento.com"
         }
     ],
+    "autoload": {
+        "psr-0": {"p2ee\\": "./.modman/partletsMagentoBridge/src/"},
+        "classmap": ["./.modman/partletsMagentoBridge/src/"]
+    },
     "extra":{
         "magento-deploystrategy": "copy",
         "magento-force": "override",

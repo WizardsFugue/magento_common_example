@@ -7,6 +7,15 @@
         <remove name="left.permanent.callout"/>
         <remove name="right.permanent.callout"/>
         <remove name="product_tag_list"/>
+        <reference name="right">
+            <block
+                    type="Example"
+                    name="partlet_example"
+                    partlet_unused="p2ee\partletsMagentoBridge\Partlet\EmptyContainer"
+                    >
+                <action method="setPartlet"><partletClass>EmptyContainer</partletClass></action>
+            </block>
+        </reference>
     </default>
     
 </layout>
