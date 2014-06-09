@@ -1,5 +1,9 @@
 <?php
 
+$mage_init_options = array(
+    'var_dir' => __DIR__.'/var'
+);
+
 require_once __DIR__ . '/magento-modules/vendor/autoload.php';
 
 require_once __DIR__ . '/public/app/Mage.php';

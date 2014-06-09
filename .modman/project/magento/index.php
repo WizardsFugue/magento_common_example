@@ -16,16 +16,16 @@ $mageFilename = MAGENTO_ROOT . '/app/Mage.php';
 $maintenanceFile = 'maintenance.flag';
 
 if (file_exists($maintenanceFile)) {
-    include_once dirname(__FILE__) . '/errors/503.php';
+    include_once MAGENTO_ROOT . '/errors/503.php';
     exit;
 }
 
 
-require_once __DIR__ . "/../bootstrap.php";
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once MAGENTO_ROOT . "/../bootstrap.php";
+require_once MAGENTO_ROOT . '/../vendor/autoload.php';
 require_once $mageFilename;
 
-require_once __DIR__ . '/../.modman/partletsMagentoBridge/bootstrap.php';
+require_once MAGENTO_ROOT . '/../.modman/partletsMagentoBridge/bootstrap.php';
 
 #Varien_Profiler::enable();
 
@@ -43,4 +43,4 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 /* Run store or run website */
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
-Mage::run($mageRunCode, $mageRunType);
+Mage::run($mageRunCode, $mageRunType, $mage_init_options);
