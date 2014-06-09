@@ -90,7 +90,9 @@ class Varien_Autoload
         }
         $classFile.= '.php';
         //echo $classFile;die();
-        return include $classFile;
+        if( stream_resolve_include_path($classFile) ){
+            return include $classFile;
+        }
     }
 
     /**
