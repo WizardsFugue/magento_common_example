@@ -1,8 +1,9 @@
 {
     "require": {
+        "connect20/mage_all_latest": "*",
         "fbrnc/aoe_templatehints": "*",
         "magento-hackathon/async-index": "dev-master",
-        "magento-hackathon/magento-composer-installer": "~2.0@dev",
+        "magento-hackathon/magento-composer-installer": "~2.0",
         "theseer/autoload": "~1.14",
         "zetacomponents/console-tools": "dev-master",
         "lisachenko/go-aop-php": "0.4.3",
@@ -25,10 +26,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/magento-hackathon/magento-composer-installer.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/magento-hackathon/AsyncIndex.git"
         },
         {
@@ -36,7 +33,7 @@
             "url": "http://packages.firegento.com"
         }
     ],
-    "autoload":{
+    "autoload____":{
         "classmap": [
             "../public/app/code",
             "../public/lib"
@@ -47,11 +44,47 @@
         "magento-force": true,
         "auto-append-gitignore": true,
         "magento-deploy-ignore": {
+            "*": [
+                "/index.php",
+                "/app/code/core/Mage/Payment/Model/Paygate/Request.php"
+            ],
+            "connect20/Lib_Varien": [
+                "/lib/Varien/Autoload.php"
+            ],
             "fbrnc/aoe_profiler": [
                 "/"
             ]
         },
         "magento-deploystrategy-overwrite": {
+            "connect20/Cm_RedisSession": "copy",
+            "connect20/Interface_Adminhtml_Default": "copy",
+            "connect20/Interface_Frontend_Base_Default": "copy",
+            "connect20/Interface_Frontend_Default": "copy",
+            "connect20/Interface_Install_Default": "copy",
+            "connect20/Lib_Cm": "copy",
+            "connect20/Lib_Credis": "copy",
+            "connect20/Lib_Google_Checkout": "copy",
+            "connect20/Lib_Js_Calendar": "copy",
+            "connect20/Lib_Js_Ext": "copy",
+            "connect20/Lib_Js_Mage": "copy",
+            "connect20/Lib_Js_Prototype": "copy",
+            "connect20/Lib_Js_TinyMCE": "copy",
+            "connect20/Lib_LinLibertineFont": "copy",
+            "connect20/Lib_Mage": "copy",
+            "connect20/Lib_Magento": "copy",
+            "connect20/Lib_Varien": "copy",
+            "connect20/Mage_All_Latest": "copy",
+            "connect20/Mage_Centinel": "copy",
+            "connect20/Mage_Compiler": "none",
+            "connect20/Mage_Core_Adminhtml": "copy",
+            "connect20/Mage_Core_Modules": "copy",
+            "connect20/Mage_Downloader": "none",
+            "connect20/Mage_Locale_en_US": "copy",
+            "connect20/Magento_Mobile": "copy",
+            "connect20/Phoenix_Moneybookers": "copy",
+            "connect20/lib_phpseclib": "copy",
+            "connect20/lib_zf": "copy",
+            "connect20/lib_zf_locale": "copy",
             "fbrnc/aoe_scheduler": "copy"
         },
         "magento-project": {

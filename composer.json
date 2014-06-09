@@ -9,10 +9,6 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/magento-hackathon/magento-composer-installer.git"
-        },
-        {
             "type": "composer",
             "url": "http://packages.firegento.com"
         }
@@ -31,6 +27,6 @@
             ]
         },
         "auto-append-gitignore": true,
-        "magento-root-dir": "../public/"
+        "magento-root-dir": "./public/"
     }
 }

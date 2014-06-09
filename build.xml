@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="MagentoCommon" basedir="." default="main" >
 
-    <target name="main"  depends="magento-base,magento-modules">
+    <target name="main"  depends="magento-base">
         <exec executable="vendor/bin/modman.sh">
+            <!--
+            <arg value="deploy-all"/>
+            -->
             <arg value="deploy"/>
             <arg value="project"/>
         </exec>
@@ -10,11 +13,12 @@
     </target>
     
     <target name="clean">
-        <delete dir="magento-base/vendor"/>
+        <delete dir="magento-base"/>
         <delete dir="magento-modules/vendor"/>
-        <delete dir="public/app/code"/>
-        <delete dir="public/app/design"/>
-        <delete dir="public/app/locale"/>
+        <delete dir="public/app"/>
+        <delete dir="public/js"/>
+        <delete dir="public/lib"/>
+        <delete dir="public/shell"/>
         <delete dir="public/skin"/>
     </target>
     
@@ -26,7 +30,7 @@
     <target name="magento-base">
         <exec executable="composer.phar">
             <arg value="install"/>
-            <arg value="--working-dir=magento-base"/>
+            <arg value="--working-dir=magento-modules"/>
             <arg value="--no-dev"/>
             <arg value="--no-interaction"/>
             <arg value="--profile"/>
@@ -38,30 +42,6 @@
     <target name="magento-base-dev">
         <exec executable="composer.phar">
             <arg value="install"/>
-            <arg value="--working-dir=magento-base"/>
-            <arg value="--dev"/>
-            <arg value="--no-interaction"/>
-            <arg value="--profile"/>
-            <arg value="--no-progress"/>
-            <arg value="--optimize-autoloader"/>
-        </exec>
-    </target>
-
-    <target name="magento-modules">
-        <exec executable="composer.phar">
-            <arg value="install"/>
-            <arg value="--working-dir=magento-modules"/>
-            <arg value="--no-dev"/>
-            <arg value="--no-interaction"/>
-            <arg value="--profile"/>
-            <arg value="--no-progress"/>
-            <arg value="--optimize-autoloader"/>
-        </exec>
-    </target>
-
-    <target name="magento-modules-dev">
-        <exec executable="composer.phar">
-            <arg value="install"/>
             <arg value="--working-dir=magento-modules"/>
             <arg value="--dev"/>
             <arg value="--no-interaction"/>
@@ -71,7 +51,7 @@
         </exec>
     </target>
     
-    <target name="magento-modules-update">
+    <target name="magento-base-update">
         <exec executable="composer.phar">
             <arg value="update"/>
             <arg value="--working-dir=magento-modules"/>
@@ -84,11 +64,11 @@
     </target>
 
 
-    <target name="dev"  depends="magento-base,magento-modules-dev">
+    <target name="dev"  depends="magento-base">
 
     </target>
     
-    <target name="update"  depends="magento-modules-update">
+    <target name="update"  depends="magento-base-update">
 
     </target>
     
