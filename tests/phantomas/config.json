@@ -1,0 +1,9 @@
+{
+    "url": "http://dev.local.cotya.de:8082/",
+    "verbose": false,
+    "reporter": "plain",
+    "block-domain": "google-analytics.com, amazonaws.com",
+    "analyze-css": true,
+    "colors": true,
+    "log": "run.log"
+}

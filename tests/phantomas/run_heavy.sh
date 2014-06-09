@@ -1,0 +1,1 @@
+phantomas http://dev.local.cotya.de:8082/ -R plain --progress --runs 5

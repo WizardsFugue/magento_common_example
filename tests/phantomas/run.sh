@@ -1,0 +1,1 @@
+phantomas --config ./config.json --runs 5 > output.log
