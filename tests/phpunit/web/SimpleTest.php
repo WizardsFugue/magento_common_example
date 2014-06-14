@@ -18,6 +18,7 @@ class SimpleTest extends WebTestCase {
     {
         $request = new \Mage_Core_Controller_Request_Http();
         $request->setRequestUri('/');
+        unset($_SERVER['HTTP_HOST']);
 
         try{
             self::executeWebRequest( $request );
@@ -28,12 +29,28 @@ class SimpleTest extends WebTestCase {
                 trim($e->getContent())
             );
         }
-        //Mage::getModel('test');
 
-        //count($response->getBody());
+    }
+    
+    
+    
+    /**
+     * @runInSeparateProcess
+     */
+    public function testHomeCmsPage()
+    {
+        $request = new \Mage_Core_Controller_Request_Http();
+        $request->setRequestUri('/');
 
-
-        //$this->assertNotEmpty($response);
+        try{
+            self::executeWebRequest( $request );
+            $this->assertNotTrue(true,"should not get executed");
+        }catch( ResponseSendException $e ){
+            $this->assertContains(
+                '<title>Home page</title>',
+                trim($e->getContent())
+            );
+        }
 
     }
 
