@@ -15,6 +15,9 @@
         <testsuite name="Magento Integration Testsuite">
             <directory>./magento-modules/vendor/WizardsFugue/magento1_tests/tests</directory>
         </testsuite>
+        <testsuite name="Magento Web Testsuite">
+            <directory>./tests/phpunit/web</directory>
+        </testsuite>
     </testsuites>
 
     <groups>
