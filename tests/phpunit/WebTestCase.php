@@ -30,6 +30,7 @@ class WebTestCase extends \PHPUnit_Framework_TestCase {
     protected static function executeWebRequest( \Mage_Core_Controller_Request_Http $request)
     {
 
+        \Mage::reset();
         $response = new Response();
         //$response = new \Zend_Controller_Response_HttpTestCase();
         $response->headersSentThrowsException = false;
@@ -43,11 +44,15 @@ class WebTestCase extends \PHPUnit_Framework_TestCase {
         $app->setRequest($options['request']);
         $app->setResponse($options['response']);
 
-        $app->run(array(
-            'scope_code' => 'default',
-            'scope_type' => 'store',
-            'options'    => $options,
-        ));
+        try{
+            $app->run(array(
+                'scope_code' => 'default',
+                'scope_type' => 'store',
+                'options'    => $options,
+            ));
+        }catch( ResponseSendException $e ){
+            //$response = $e->getResponse();
+        }
 
         return $response;
     }

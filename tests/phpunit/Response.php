@@ -11,6 +11,8 @@ namespace WizardsFugue\Magento1_Tests\Web;
 
 
 class Response extends \Mage_Core_Controller_Response_Http{
+    
+    protected $sendResponseContent;
 
     /**
      * "send" headers by returning array of all headers that would be sent
@@ -104,9 +106,15 @@ class Response extends \Mage_Core_Controller_Response_Http{
             $content .= $this->outputBody();
         }
 
+        $this->sendResponseContent = $content;
         $exception = new ResponseSendException();
         $exception->setContent($content);
         $exception->setResponse($this);
         throw $exception;
+    }
+    
+    public function getSendResponseContent()
+    {
+        return $this->sendResponseContent;
     }
 } 

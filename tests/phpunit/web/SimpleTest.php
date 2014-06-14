@@ -20,15 +20,11 @@ class SimpleTest extends WebTestCase {
         $request->setRequestUri('/');
         unset($_SERVER['HTTP_HOST']);
 
-        try{
-            self::executeWebRequest( $request );
-            $this->assertNotTrue(true,"should not get executed");
-        }catch( ResponseSendException $e ){
-            $this->assertEquals(
-                'Location: http://dev.local.cotya.de:8082/',
-                trim($e->getContent())
-            );
-        }
+        $response = self::executeWebRequest( $request );
+        $this->assertEquals(
+            'Location: http://dev.local.cotya.de:8082/',
+            trim($response->getSendResponseContent())
+        );
 
     }
     
@@ -42,15 +38,11 @@ class SimpleTest extends WebTestCase {
         $request = new \Mage_Core_Controller_Request_Http();
         $request->setRequestUri('/');
 
-        try{
-            self::executeWebRequest( $request );
-            $this->assertNotTrue(true,"should not get executed");
-        }catch( ResponseSendException $e ){
-            $this->assertContains(
-                '<title>Home page</title>',
-                trim($e->getContent())
-            );
-        }
+        $response = self::executeWebRequest( $request );
+        $this->assertContains(
+            '<title>Home page</title>',
+            trim($response->getSendResponseContent())
+        );
 
     }
 
