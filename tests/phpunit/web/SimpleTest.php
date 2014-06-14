@@ -12,13 +12,13 @@ namespace WizardsFugue\Magento1_Tests\Web;
 class SimpleTest extends WebTestCase {
 
     /**
-     * @runInSeparateProcess
+     * 
      */
     public function testIncompleteRequestObject()
     {
-        $request = new \Mage_Core_Controller_Request_Http();
+        $request = new Request();
         $request->setRequestUri('/');
-        unset($_SERVER['HTTP_HOST']);
+        $request->setServer('HTTP_HOST', '');
 
         $response = self::executeWebRequest( $request );
         $this->assertEquals(
@@ -31,11 +31,11 @@ class SimpleTest extends WebTestCase {
     
     
     /**
-     * @runInSeparateProcess
+     * 
      */
     public function testHomeCmsPage()
     {
-        $request = new \Mage_Core_Controller_Request_Http();
+        $request = new Request();
         $request->setRequestUri('/');
 
         $response = self::executeWebRequest( $request );
