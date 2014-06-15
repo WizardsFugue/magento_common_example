@@ -2,10 +2,6 @@
 
 require_once( __DIR__.'/../bootstrap.php');
 
-require_once( __DIR__.'/phpunit/WebTestCase.php');
-require_once( __DIR__.'/phpunit/Request.php');
-require_once( __DIR__.'/phpunit/Response.php');
-require_once( __DIR__.'/phpunit/ResponseSendException.php');
 $_SERVER['HTTP_HOST'] = 'dev.local.cotya.de:8082';
 
 Mage::setIsDeveloperMode(true);
