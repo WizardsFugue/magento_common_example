@@ -1,7 +1,7 @@
 
 
 YAML = require('dalekjs/node_modules/js-yaml');
-var config = require('../config/local.yml');
+var config = require('local.yml');
 
 
 
