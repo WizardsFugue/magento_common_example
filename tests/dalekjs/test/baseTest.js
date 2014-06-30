@@ -1,7 +1,6 @@
 
 
-YAML = require('dalekjs/node_modules/js-yaml');
-var config = require('local.yml');
+var config = require('magento-dalekjs').getConfig();
 
 
 
