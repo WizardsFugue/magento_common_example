@@ -1,2 +1,6 @@
 url: 'http://dev.local.cotya.de:8082/'
 waitForClick: 3000
+admin:
+  url: 'http://dev.local.cotya.de:8082/admin'
+  user: 'admin'
+  password: 'password'

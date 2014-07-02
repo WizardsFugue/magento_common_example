@@ -11,7 +11,7 @@ module.exports = {
 
 console.log('current parsed config file: "' + __dirname + '/'+ __filename +'"');
 var test = require('magento-dalekjs');
-console.log(test.getConfig());
+console.log( ['default config', test.getConfig()] );
 test.setConfig(require('./config/local.yml'))
-console.log(test.getConfig());
+console.log( ['loaded local config', test.getConfig()] );
 

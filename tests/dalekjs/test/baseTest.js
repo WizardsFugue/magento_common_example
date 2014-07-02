@@ -14,5 +14,11 @@ module.exports = {
             .done();
     },
     
+    'Magento Admin Login working': function (test) {
+
+        require('magento-dalekjs').getAdmin().doLogin(test);
+        test.done();
+    }
+    
     
 };
